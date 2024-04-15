@@ -1,0 +1,259 @@
+/* adaptations for smaller screens */
+@media only screen and (max-width: 600px) {
+  .header-display-mobile{
+    margin: 6vh 0 0 0 !important;
+    padding: 0 6vw 0 6vw !important;
+  }
+  
+  #collection-6609f6448e97830a9a616afb header{
+    display: none !important;
+  }
+  
+/*   making galleries fit within mobile webpage */
+  .gallery-grid{
+    padding: 6vw !important;
+  }
+}
+
+
+/* This is a media query & only applies to larger screens, not mobile  */
+@media only screen and (min-width: 700px) {
+
+  #block-yui_3_17_2_1_1713039635467_5458{
+    max-height: 600px !important;
+  }
+ 
+/*   Removes the header in desktop versions of the home landing nav page */
+  #collection-6609f6448e97830a9a616afb header{
+    display: none !important;
+}
+  
+/*    Make header margins larger to align with page content even on larger pages */
+ header{
+/*    keep header centered at all times */
+    margin: 4vh auto 0 auto !important;
+   max-width: 1600px !important;
+   padding: 0 1vw 0 1vw !important;
+	}
+
+/*    Stack header links */
+    .header-nav-list{
+      display: block !important;
+  }
+ 
+/*    Make active header link red */
+	.header-nav-item--active a {
+		color: #BF212F !important;
+  }
+  
+/*    Alternative: make header link red */
+    .header-nav-item--active > a{
+		color: #BF212F !important;
+  }
+  
+/*   Remove underline in active links in header, Specify weight and line height of header links, as it differs from rest of website */
+	.header-nav-list a{
+    	background-image: none !important;
+      font-weight: 700;
+		line-height: 1.3em;
+  }
+  
+/*  Specifically move the "contact" link down from the rest of the header links  */
+    .header-nav-list a[href="/contact"]{
+		margin: 20px 0 0 0;
+  }
+  
+/*    Make line height same after pressing "enter" */
+    .sqsrte-small {
+		line-height: 1.1em !important;
+        margin: 0 0 0 0 !important;
+  }
+
+/*   Remove body link underlines & allow for smooth color change to brand red on hover */
+  .fe-block a{
+    text-decoration: none !important;
+    transition: 0.2s !important;
+  }
+ 
+/*  change color of body link to red on hover & assure that underline is still invisible */
+  .fe-block a:hover{
+      color: #BF212F !important;
+      text-decoration: none !important;
+  }
+  
+  section[data-section-id="660f53d27e58956fdcb0373e"]{
+    display: none !important;
+  }
+  
+  .gallery-fullscreen-slideshow-item-wrapper{
+    max-width: 1600px !important;
+    margin: 0 auto 0 auto !important;
+  }
+  .gallery-fullscreen-slideshow-wrapper{
+    max-width: 1600px !important;
+    margin: 0 auto 0 auto !important;
+  }
+  
+  .gallery-fullscreen-slideshow{
+    max-width: 1600px !important;
+    margin: 0 auto 0 auto !important;
+    padding: 0 0 0 0 !important;
+  }
+
+/*   make vertical videos not look whack as hell */
+  video{
+	object-fit: cover !important;
+    height: 100% !important;
+  }
+  
+  .video-wrapper{
+    height: 150% !important;
+    overflow: visible !important;
+  }
+  
+/*   make vertical video cover image also look God damn normal */
+  .plyr__poster{
+    background-size: cover !important;
+    height: 150% !important;
+    overflow: visible !important;
+  }
+  
+/*   make No Nazar video actually look good (stretch landscape) */
+  #block-yui_3_17_2_1_1712519213802_4783{
+    height: 120% !important;
+    overflow: visible !important;
+  }
+  
+  #yui_3_17_2_1_1712523805181_302{
+    overflow: visible !important;
+    height: 120% !important;
+  }
+  
+  #yui_3_17_2_1_1712523805181_302 div{
+    overflow: visible !important;
+  }
+}
+
+/* Making slideshow side padding compatible with larger screens */
+    .gallery-fullscreen-slideshow-wrapper{
+/*     making sure the gallery is centered at all times */
+      max-width: 1600px !important;
+      margin: 0 auto 0 auto;
+  }
+
+/* remove footer on landing page */
+#collection-6609f6448e97830a9a616afb footer{
+  display: none !important;
+}
+
+/* remove link underlines on landing page links */
+#block-yui_3_17_2_1_1711926370223_8637 a{
+    text-decoration: none !important;
+}
+
+#block-6a5e7f96810eb9a5b72f a{
+      text-decoration: none !important;
+}
+
+#block-a03d893666205f308c9f a{
+	text-decoration: none !important;
+}
+
+#block-a03d893666205f308c9f a:hover{
+	text-decoration: none !important;
+  color: #0000FF;
+}
+
+#block-c0d8ff7c34f5beb04334 a{
+   text-decoration: none !important; 
+  transition: 0.2s !important;
+}
+
+#block-yui_3_17_2_1_1711926370223_8637 span:hover{
+  color: #0000FF !important;
+   text-decoration: none !important; 
+}
+
+/* transition speed for color change when hovering over landing page links */
+#yui_3_17_2_1_1712192730880_326 span{
+  transition: 0.2s !important;
+}
+
+/* change link color to blue when hovering over landing page links */
+#block-6a5e7f96810eb9a5b72f span:hover{
+    color: #0000FF !important;
+   text-decoration: none !important; 
+}
+/* change link color to blue when hovering over landing page links */
+#block-c0d8ff7c34f5beb04334 span:hover{
+  color: #0000FF !important;
+  text-decoration: none !important; 
+}
+/* change link color to blue when hovering over landing page links */
+#block-a03d893666205f308c9f span:hover{
+  color: #0000FF !important;
+  text-decoration: none !important;
+}
+
+#block-6a5e7f96810eb9a5b72f span{
+  transition: 0.2s !important;
+}
+
+#block-a03d893666205f308c9f span{
+    transition: 0.2s !important;
+}
+
+#block-c0d8ff7c34f5beb04334 span{
+  transition: 0.2s !important;
+}
+
+#block-yui_3_17_2_1_1711926370223_8637 span{
+  transition: 0.2s !important;
+}
+
+/* remove weird extra left & right padding from header */
+.header .header-announcement-bar-wrapper{
+	  max-width: 1600px !important;
+	  padding-top: inherit !important;
+    padding-right: 0vw !important;
+    padding-bottom: inherit !important;
+    padding-left: 0vw !important;
+}
+
+
+/* removing elements on production pages for All About Music features that haven't come out yet */
+section[data-section-id="660f0d1342c423433219ad3f"]{
+  display: none !important;
+}
+
+section[data-section-id="660f0d1342c423433219ad40"]{
+  display: none !important;
+}
+
+section[data-section-id="660f0d92d52c6478044d30a1"]{
+  display: none !important;
+}
+
+section[data-section-id="660f0d92d52c6478044d30a6"]{
+  display: none !important;
+}
+
+section[data-section-id="660f0d92d52c6478044d30a2"]{
+  display: none !important;
+}
+
+section[data-section-id="661070ea6dc18f0f5fb74928"]{
+  display: none !important;
+}
+
+section[data-section-id="6612f9509c65fa346b176a2b"]{
+  display: none!important;
+}
+
+section[data-section-id="6612fcb1de61ec5a947a2776"]{
+  display: none !important;
+}
+
+section[data-section-id="661070ea6dc18f0f5fb7492d"]{
+  display: none !important;
+}
